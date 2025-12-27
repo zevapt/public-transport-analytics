@@ -82,6 +82,22 @@ COMMENT ON TABLE taps IS
 
 
 -- =====================
+-- TABLE: stg_taps_raw
+-- =====================
+-- Raw imported tap data from Excel (staging layer)
+CREATE TABLE IF NOT EXISTS stg_taps_raw (
+    card_id VARCHAR(50),
+    tap_type VARCHAR(10),
+    tap_time TIMESTAMP,
+    stop_name VARCHAR(50),
+    vehicle_code VARCHAR(10)
+);
+
+COMMENT ON TABLE stg_taps_raw IS
+'Staging table for raw tap-in and tap-out data imported from Excel';
+
+
+-- =====================
 -- OPTIONAL: calendar dimension
 -- =====================
 CREATE TABLE IF NOT EXISTS calendar (
