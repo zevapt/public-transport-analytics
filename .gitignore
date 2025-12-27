@@ -25,5 +25,13 @@ env/
 *.tds
 *.tdsx
 
+# Raw & processed data
+data/raw/*
+data/processed/*
+
+# Keep folder structure
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
 # Logs
 *.log
