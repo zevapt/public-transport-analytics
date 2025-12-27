@@ -1,0 +1,2 @@
+-- PostgreSQL schema for public transportation analytics
+-- Tables will be defined here
