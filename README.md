@@ -22,3 +22,7 @@ Urban public transport operators need insights into passenger patterns, route ut
 - SQL
 - Tableau Public
 - Python (Pandas)
+
+## Database Setup
+This project uses PostgreSQL as the primary analytical database.
+Database credentials are managed via environment variables and are not committed to the repository.
