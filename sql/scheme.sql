@@ -82,19 +82,19 @@ COMMENT ON TABLE taps IS
 
 
 -- =====================
--- TABLE: stg_taps_raw
+-- TABLE: staging_taps_raw
 -- =====================
--- Raw imported tap data from Excel (staging layer)
-CREATE TABLE IF NOT EXISTS stg_taps_raw (
+-- Raw tap-in / tap-out data imported from Excel
+CREATE TABLE IF NOT EXISTS staging_taps_raw (
+    tap_id BIGSERIAL PRIMARY KEY,
     card_id VARCHAR(50),
-    tap_type VARCHAR(10),
+    tap_type VARCHAR(10) CHECK (tap_type IN ('IN', 'OUT')),
     tap_time TIMESTAMP,
-    stop_name VARCHAR(50),
-    vehicle_code VARCHAR(10)
+    stop_name VARCHAR(100),
+    vehicle_code VARCHAR(50)
 );
 
-COMMENT ON TABLE stg_taps_raw IS
-'Staging table for raw tap-in and tap-out data imported from Excel';
+COMMENT ON TABLE staging_taps_raw IS 'Raw e-money tap data imported from Excel (no foreign keys)';
 
 
 -- =====================
