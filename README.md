@@ -1,7 +1,7 @@
 # Public Transportation Analytics
 
 ## Business Problem
-Urban public transport operators such as TransJakarta need insights into passenger demand, corridor utilization, and peak-hour congestion to optimize fleet allocation and service frequency, particularly on high-demand corridors such as Corridor 9 and its variants (9A, 9C, 9N).
+Urban public transport operators such as TransJakarta need insights into passenger demand, corridor utilization, and peak-hour congestion to optimize fleet allocation and service frequency, particularly on high-demand corridors such as Corridor 9.
 
 ## Dataset
 (To be added)
