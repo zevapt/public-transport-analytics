@@ -26,3 +26,8 @@ Urban public transport operators such as TransJakarta need insights into passeng
 ## Database Setup
 This project uses PostgreSQL as the primary analytical database.
 Database credentials are managed via environment variables and are not committed to the repository.
+
+### Date Handling
+All timestamps are stored in ISO-8601 format (YYYY-MM-DD) in the database
+to ensure consistency and avoid locale-dependent issues.
+Date formatting is applied only at the presentation layer.
